@@ -1,0 +1,11 @@
+name: docker-image-workflow
+on:
+  push:
+    branches:
+      - kev
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v3
