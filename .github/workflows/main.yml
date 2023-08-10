@@ -2,7 +2,7 @@ name: docker-image-workflow
 on:
   push:
     branches:
-      - kev
+      - main
 jobs:
   build:
     runs-on: ubuntu-latest
