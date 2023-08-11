@@ -21,6 +21,13 @@ jobs:
         uses: docker/metadata-action@v4
         with:
           images: kevins0004/publish-docker_image
+          
+      - name: Build and push
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          push: true
+          tags: kevins0004/publish-docker_image
       
           
           
