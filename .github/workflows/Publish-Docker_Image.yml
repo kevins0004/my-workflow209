@@ -27,7 +27,8 @@ jobs:
         with:
           context: .
           push: true
-          tags: kevins0004/publish-docker_image
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.tags }}
       
           
           
